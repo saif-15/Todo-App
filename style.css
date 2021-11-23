@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  background-color: #181824;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 300px;
+  object-position: left;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.header span {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+.item-create {
+  margin-top: 30px;
+  width: 60%;
+  height: 60px;
+  background-color: hsl(234, 23%, 23%);
+  display: flex;
+  border-radius: 10px;
+  opacity:0.8;
+  transition: all 0.25s ease-out;
+
+}
+.item-create:hover{
+  opacity: 1;
+}
+
+.check-space {
+  width: 60px;
+  
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mark img{
+  visibility: hidden;
+}
+.mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgb(116, 109, 109);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.mark:hover,.mark.checked{
+    background-image: linear-gradient(blue,purple);
+}
+
+.check:hover,.mark.checked img{
+ visibility: visible;
+}
+
+
+.textfeild {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 10px;
+ 
+}
+
+form{
+    width: 100%;
+    
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-style: none;
+  font-size: 16px;
+  stroke-width: none;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+.list-items{
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item{
+  width: 60%;
+  height: 60px;
+  background-color: hsl(230, 20%, 23%);
+  display: flex;
+  opacity: 1;
+  margin:5px;
+  border-radius: 10px;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+
+
+.list-item:hover{
+    
+  transform: translateY(-2px);
+  background-color: hsl(230, 30%, 20%);
+  
+   
+   }
+
+.data-feild{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.text{
+    color: white;
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+.statuses{
+  display: flex;
+  height: 50px;
+  color: gray;
+  width: 60%;
+  border-radius: 10px;
+  align-items: center;
+  
+  background-color: hsl(230, 20%, 23%);
+  justify-content: space-between;
+}
+
+.count{
+  margin-left: 10px;
+}
+.clear{
+  margin-right: 10px;
+}
+
+.clear:hover{
+  cursor: pointer;
+  color: palevioletred;
+}
+.options span:hover{
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+

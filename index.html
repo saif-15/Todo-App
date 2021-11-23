@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+    <title>Todo-App</title>
+  </head>
+  <body>
+    <div class="background">
+      <img src="/assets/bg-desktop-dark.jpg" alt="" />
+    </div>
+
+    <div class="content-wrapper">
+      <div class="header">
+        <span>TODO</span>
+        <img src="/assets/icon-moon.svg" alt="" />
+      </div>
+
+      <div class="item-create">
+        <div class="check-space">
+          <div class="check">
+           
+          </div>
+        </div>
+        <div class="textfeild">
+          <form spellcheck="false" onsubmit="addItemToDb(event)">
+            <input id="text" type="text" placeholder="Create a new todo.." />
+          </form>
+        </div>
+      </div>
+
+      <div class="list-items">
+       
+      </div>
+
+    </div>
+  </body>
+</html>
